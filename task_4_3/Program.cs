@@ -11,7 +11,7 @@ int Prompt(string msg)
 int[] NewArray(int n, int max, int min)
 {
     int[] arr = new int[n];
-    for (int i = 0; i < n-1; i++)
+    for (int i = 0; i < n; i++)
     {
         arr[i] = new Random().Next(min, max);
     }
@@ -21,7 +21,7 @@ int[] NewArray(int n, int max, int min)
 void PrintArray(int[] arrprint)
 {
     Console.Write($"{arrprint[0]}");
-    for (int i = 1; i < arrprint.Length - 1; i++)
+    for (int i = 1; i < arrprint.Length; i++)
     {
         Console.Write($", {arrprint[i]}");
     }

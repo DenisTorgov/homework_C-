@@ -10,6 +10,7 @@
 
 string UserInput (string msg)
 {
+    Console.WriteLine(msg);
     return Console.ReadLine();
 }
 
@@ -41,4 +42,5 @@ void PrintMatrix (double[,] arr)
 Console.WriteLine("Заполнение матрицы m х n из вещественных чисел");
 int m = Convert.ToInt32(UserInput("Введите количество строк в матрице"));
 int n = Convert.ToInt32(UserInput("Введите количество столбцов в матрице"));
-PrintMatrix(NewRandomMatrix(m, n));
+double[,] k = NewRandomMatrix(m, n);
+PrintMatrix(k);
