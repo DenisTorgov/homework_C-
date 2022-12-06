@@ -21,7 +21,7 @@ void PrintEvenNumbersMN(int m, int n)
 }
 
 int m = Convert.ToInt32(UserInput("Введите начальное число: "));
-int n = Convert.ToInt32(UserInput("Введите конечное число: "));;
+int n = Convert.ToInt32(UserInput("Введите конечное число: "));
 if (m % 2 == 0)
 {
     PrintEvenNumbersMN(m,n);
